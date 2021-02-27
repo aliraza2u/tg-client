@@ -1,0 +1,18 @@
+.navbar {
+    background-color: rgb(233, 121, 139);
+    .typography {
+        flex-grow: 1;
+    }
+    .search_wrap {
+        display: flex;
+        padding: 1%;
+        .search_bar {
+            align-self: flex-end;
+            margin-bottom: 5px;
+        }
+        .search_field {
+            width: 200px;
+            margin-bottom: 5px;
+        }
+    }
+}
