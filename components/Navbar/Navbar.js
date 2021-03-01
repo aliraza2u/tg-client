@@ -23,7 +23,7 @@ const Navbar = () => {
   const classes = useStyles();
   return (
     <div>
-      <AppBar className={styles.navbar}>
+      <AppBar className={styles.navbar_wrap} position="sticky" color="none">
         <Toolbar>
           {/* Sidebar Menu */}
           <IconButton
@@ -43,7 +43,6 @@ const Navbar = () => {
 
           {/* Search Bar */}
           <div className={styles.search_wrap}>
-            {/* <TextField className={styles.search_field} /> */}
             <InputBase placeholder="Search…" className={styles.search_field} />
             <Search className={styles.search_bar} />
           </div>

@@ -1,7 +1,5 @@
 import { Drawer } from "@material-ui/core";
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import ListSubheader from "@material-ui/core/ListSubheader";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -10,19 +8,9 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import { SidebarData } from "../../utils/data";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper,
-  },
-  nested: {
-    paddingLeft: theme.spacing(4),
-  },
-}));
+import styles from './sidebar.module.scss';
 
 const Sidebar = (props) => {
-  const classes = useStyles();
   const [openedItems, setOpenedItems] = useState({});
 
   const handleClick = (key) => {
@@ -34,12 +22,7 @@ const Sidebar = (props) => {
         <List
           component="nav"
           aria-labelledby="nested-list-subheader"
-          subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              Nested List Items
-            </ListSubheader>
-          }
-          className={classes.root}
+          className={styles.sidebar_list}
         >
           {SidebarData.map((x) => (
             <>
@@ -62,7 +45,7 @@ const Sidebar = (props) => {
                 >
                   <List component="div" disablePadding>
                     {x.subNav?.map((sub) => (
-                      <ListItem button className={classes.nested}>
+                      <ListItem button >
                         <ListItemIcon>{sub.icon}</ListItemIcon>
                         <ListItemText primary={sub.title} />
                       </ListItem>

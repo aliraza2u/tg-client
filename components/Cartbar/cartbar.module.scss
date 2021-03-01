@@ -1,0 +1,39 @@
+.cartbar_wrap {
+    background-color: rgb(245, 194, 202);
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    .login {
+        padding: 10px;
+        &:hover {
+            background-color: rgb(243, 155, 169);
+            cursor: pointer;
+            color: #ffffff;
+        }
+    }
+    .carts_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 1%;
+        .wishlist {
+            margin-right: 10px;
+            padding: 10px;
+            &:hover {
+                background-color: rgb(253, 120, 142);
+                cursor: pointer;
+                color: #ffffff;
+            }
+        }
+        .cartlist {
+            margin-left: 10px;
+            padding: 10px;
+            &:hover {
+                background-color: rgb(253, 120, 142);
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+    }
+}
