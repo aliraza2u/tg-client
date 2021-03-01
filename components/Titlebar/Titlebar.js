@@ -5,7 +5,7 @@ import {
   ShoppingCart,
 } from "@material-ui/icons";
 import React from "react";
-import styles from "./cartbar.module.scss";
+import styles from "./titlebar.module.scss";
 // import {FavoriteBorderIcon} from '@material-ui/icons';
 
 const Cartbar = () => {
