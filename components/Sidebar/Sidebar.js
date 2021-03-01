@@ -1,35 +1,79 @@
-import React from "react";
-import styles from './sidebar.module.scss'
-const Sidebar = () => {
+import { Drawer } from "@material-ui/core";
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import ListSubheader from "@material-ui/core/ListSubheader";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import Collapse from "@material-ui/core/Collapse";
+import ExpandLess from "@material-ui/icons/ExpandLess";
+import ExpandMore from "@material-ui/icons/ExpandMore";
+import { SidebarData } from "../../utils/data";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper,
+  },
+  nested: {
+    paddingLeft: theme.spacing(4),
+  },
+}));
+
+const Sidebar = (props) => {
+  const classes = useStyles();
+  const [openedItems, setOpenedItems] = useState({});
+
+  const handleClick = (key) => {
+    setOpenedItems({ ...openedItems, [key]: !openedItems[key] });
+  };
   return (
-    <div className={styles.sidebar}>
-      <h1>
-        Sidebar Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Doloremque, aut nisi suscipit sit, alias impedit fuga provident eveniet
-        nobis repellendus nemo sed voluptatibus harum earum cumque at ex ducimus
-        culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Accusamus pariatur recusandae similique quia obcaecati commodi maxime
-        minima magni iure numquam. Eaque dolorum nisi possimus vitae fuga aut
-        odio qui deserunt dignissimos iusto totam dicta esse earum, officiis
-        officia consectetur labore alias odit minima aliquam, eos explicabo
-        inventore cum? Debitis, optio hic. Quaerat, error natus id deserunt
-        quibusdam quisquam ut odit incidunt cum enim optio repellat ratione
-        praesentium laboriosam et reprehenderit. Iusto numquam, eius porro
-        molestias sint magnam consectetur veritatis omnis vel ducimus harum
-        illum autem eos corrupti adipisci nulla deleniti at soluta accusantium
-        libero. Perspiciatis dolorum atque ipsam. Nihil, voluptatem. Lorem ipsum
-        dolor sit, amet consectetur adipisicing elit. Odio cum eveniet
-        consequuntur doloribus illo, dolor asperiores excepturi molestiae
-        dolores autem temporibus ratione fugiat reprehenderit cumque similique,
-        odit ut aliquam possimus, non optio doloremque quidem ullam! Nobis
-        voluptates iure ea sed ab nemo voluptatibus porro sit debitis? Fuga ea
-        earum laudantium accusamus nesciunt tempora velit quod non perspiciatis
-        labore illum vitae, qui, aliquam unde, ab nam laborum exercitationem
-        atque fugiat quis eum adipisci veritatis officia. Quisquam culpa vero
-        quibusdam, labore minima voluptas repellat voluptate id perferendis
-        iusto mollitia possimus eius iste, laborum asperiores saepe explicabo
-        ipsam, delectus corporis vel! Nemo, deserunt!
-      </h1>
+    <div>
+      <Drawer anchor="left" open={props.open} onClose={() => props.onClose()}>
+        <List
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+          subheader={
+            <ListSubheader component="div" id="nested-list-subheader">
+              Nested List Items
+            </ListSubheader>
+          }
+          className={classes.root}
+        >
+          {SidebarData.map((x) => (
+            <>
+              <ListItem button onClick={() => handleClick(x.title)}>
+                <ListItemIcon>{x.icon}</ListItemIcon>
+                <ListItemText primary={x.title} />
+                {x.subNav ? (
+                  openedItems[x.title] ? (
+                    <ExpandLess />
+                  ) : (
+                    <ExpandMore />
+                  )
+                ) : null}
+              </ListItem>
+              {x.subNav && (
+                <Collapse
+                  in={openedItems[x.title]}
+                  timeout="auto"
+                  unmountOnExit
+                >
+                  <List component="div" disablePadding>
+                    {x.subNav?.map((sub) => (
+                      <ListItem button className={classes.nested}>
+                        <ListItemIcon>{sub.icon}</ListItemIcon>
+                        <ListItemText primary={sub.title} />
+                      </ListItem>
+                    ))}
+                  </List>
+                </Collapse>
+              )}
+            </>
+          ))}
+        </List>
+      </Drawer>
     </div>
   );
 };

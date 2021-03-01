@@ -1,50 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./navbar.module.scss";
-import Autocomplete from "@material-ui/lab/Autocomplete";
 import {
   AppBar,
   Button,
   IconButton,
-  Link,
   Toolbar,
   Typography,
   TextField,
   makeStyles,
+  InputBase,
 } from "@material-ui/core";
-import { Menu, Search } from "@material-ui/icons";
+import { Menu, Search, SearchRounded } from "@material-ui/icons";
+import Sidebar from "../Sidebar";
+import {NavbarRoute} from "../../utils/data";
 
 const Navbar = () => {
+  const [showSidebar, setSidebar] = useState(false);
+  const closeSidebar = () => {
+    setSidebar(false);
+  };
+
   const classes = useStyles();
   return (
     <div>
       <AppBar className={styles.navbar}>
         <Toolbar>
-          <IconButton className={classes.sectionMobile}>
+          {/* Sidebar Menu */}
+          <IconButton
+            color="inherit"
+            className={classes.sectionMobile}
+            onClick={() => setSidebar(!showSidebar)}
+          >
             <Menu />
           </IconButton>
 
-          <Typography
-            variant="h6"
-            className="typography"
-            className={styles.typography}
-          >
-            Tahaif Ghar
-          </Typography>
+          {/* Navbar Branding */}
+          <div className={styles.typography}>
+            <Typography variant="h6" className="typography">
+              Tahaif Ghar
+            </Typography>
+          </div>
 
+          {/* Search Bar */}
           <div className={styles.search_wrap}>
+            {/* <TextField className={styles.search_field} /> */}
+            <InputBase placeholder="Search…" className={styles.search_field} />
             <Search className={styles.search_bar} />
-            <TextField className={styles.search_field} />
           </div>
 
-          <div className={classes.sectionDesktop}>
-            <Button href="" color="inherit">
-              Home
-            </Button>
-            <Button href="">About</Button>
-            <Button href="">Contact</Button>
-          </div>
+          {/* Appbar Routes */}
+          {NavbarRoute?.map((x, index) => {
+            return (
+              <div className={classes.sectionDesktop}>
+                <Button color="inherit" href={x.href}>
+                  {x.name}
+                </Button>
+              </div>
+            );
+          })}
         </Toolbar>
       </AppBar>
+
+      {/* Send props to sidebar component */}
+      {<Sidebar open={showSidebar} onClose={closeSidebar} />}
     </div>
   );
 };
