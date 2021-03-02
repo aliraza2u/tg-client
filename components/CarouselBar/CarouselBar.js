@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Carousel } from "antd";
 import styles from "./carousel.module.scss";
 // import { Fade, Bounce, Zoom } from "react-awesome-reveal";
-import {useSpring, animated} from 'react-spring';
+import { useSpring, animated } from "react-spring";
 
 const CarouselBar = () => {
-  const props = useSpring({opacity: 1, from: {opacity: 0}})
-  
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
+
   const [sliderData, setSliderData] = useState([
     {
       image:
@@ -30,7 +30,7 @@ const CarouselBar = () => {
 
   return (
     <div>
-      <Carousel className={styles.carousel_wrapper}>
+      <Carousel autoplay className={styles.carousel_wrapper}>
         {sliderData.map((x, index) => (
           <div key={index}>
             <div

@@ -14,7 +14,7 @@ import { Menu, Search, SearchRounded } from "@material-ui/icons";
 import Sidebar from "../Sidebar";
 import { NavbarData } from "../../utils/data";
 import Titlebar from "../Titlebar";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Navbar = () => {
   const [showSidebar, setSidebar] = useState(false);
@@ -26,10 +26,9 @@ const Navbar = () => {
   return (
     <div>
       <AppBar className={styles.navbar_wrap} position="sticky">
-        <Toolbar>
+        <Toolbar className={styles.toolbar_wrap}>
           {/* Sidebar Menu */}
           <IconButton
-            color="inherit"
             className={classes.sectionMobile}
             onClick={() => setSidebar(!showSidebar)}
           >
@@ -46,7 +45,9 @@ const Navbar = () => {
           {/* Search Bar */}
           <div className={styles.search_wrap}>
             <InputBase placeholder="Search…" className={styles.search_field} />
-            <Search className={styles.search_bar} />
+            <IconButton>
+              <Search className={styles.search_bar} />
+            </IconButton>
           </div>
 
           {/* Appbar Routes */}
