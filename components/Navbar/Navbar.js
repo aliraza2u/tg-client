@@ -12,7 +12,9 @@ import {
 } from "@material-ui/core";
 import { Menu, Search, SearchRounded } from "@material-ui/icons";
 import Sidebar from "../Sidebar";
-import {NavbarRoute} from "../../utils/data";
+import { NavbarData } from "../../utils/data";
+import Titlebar from "../Titlebar";
+import Link from 'next/link'
 
 const Navbar = () => {
   const [showSidebar, setSidebar] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = () => {
   const classes = useStyles();
   return (
     <div>
-      <AppBar className={styles.navbar_wrap} position="sticky" color="none">
+      <AppBar className={styles.navbar_wrap} position="sticky">
         <Toolbar>
           {/* Sidebar Menu */}
           <IconButton
@@ -48,11 +50,13 @@ const Navbar = () => {
           </div>
 
           {/* Appbar Routes */}
-          {NavbarRoute?.map((x, index) => {
+          {NavbarData?.map((x, index) => {
             return (
-              <div className={classes.sectionDesktop}>
-                <Button color="inherit" href={x.href}>
-                  {x.name}
+              <div key={index} className={classes.sectionDesktop}>
+                <Button>
+                  <Link href={x.path}>
+                    <a>{x.name}</a>
+                  </Link>
                 </Button>
               </div>
             );

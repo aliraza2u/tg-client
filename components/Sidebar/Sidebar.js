@@ -8,7 +8,7 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import { SidebarData } from "../../utils/data";
-import styles from './sidebar.module.scss';
+import styles from "./sidebar.module.scss";
 
 const Sidebar = (props) => {
   const [openedItems, setOpenedItems] = useState({});
@@ -24,9 +24,9 @@ const Sidebar = (props) => {
           aria-labelledby="nested-list-subheader"
           className={styles.sidebar_list}
         >
-          {SidebarData.map((x) => (
+          {SidebarData.map((x, index) => (
             <>
-              <ListItem button onClick={() => handleClick(x.title)}>
+              <ListItem key={index} button onClick={() => handleClick(x.title)}>
                 <ListItemIcon>{x.icon}</ListItemIcon>
                 <ListItemText primary={x.title} />
                 {x.subNav ? (
@@ -45,7 +45,7 @@ const Sidebar = (props) => {
                 >
                   <List component="div" disablePadding>
                     {x.subNav?.map((sub) => (
-                      <ListItem button >
+                      <ListItem button>
                         <ListItemIcon>{sub.icon}</ListItemIcon>
                         <ListItemText primary={sub.title} />
                       </ListItem>

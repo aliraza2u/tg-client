@@ -2,18 +2,18 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import {HomeOutlined, NavigateBeforeOutlined, Message, CardTravel,Money} from '@material-ui/icons'
 
-export const NavbarRoute = [
+export const NavbarData = [
   {
     name: "Home",
-    href: "/",
+    path: "/",
   },
   {
-    name: "About",
-    href: "/",
+    name: "Products",
+    path: "/products",
   },
   {
-    name: "Contact",
-    href: "/",
+    name: "Support",
+    path: "/support",
   },
 ];
 

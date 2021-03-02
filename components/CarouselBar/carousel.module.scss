@@ -1,0 +1,16 @@
+.carousel_wrapper {
+    height: 85vh;
+    overflow: hidden;
+}
+
+.carousel_item {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-position: center;
+}

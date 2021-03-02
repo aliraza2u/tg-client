@@ -1,13 +1,14 @@
 import React from "react";
 import Titlebar from "../../components/Titlebar";
 import Navbar from "../../components/Navbar";
+import CarouselBar from "../../components/CarouselBar";
 
 const Home = () => {
   return (
     <div>
       <Titlebar />
       <Navbar />
-      <h1>Hello</h1>
+      <CarouselBar />
     </div>
   );
 };
