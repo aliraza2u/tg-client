@@ -10,16 +10,16 @@ const SalesProducts = () => {
         <div className="row">
           {SaleProductsCard?.map((data, index) => {
             return (
-              <div className="col-lg-6" style={{ padding: "1px" }} key={index}>
+              <div className={`${styles.classname} col-lg-6`} style={{ padding: "1px" }} key={index}>
                 <div
                   style={{ backgroundImage: `url(${data.image})` }}
                   className={styles.sale_image}
                 >
                   <div
-                    className={`d-flex  ${
-                      index % 2 === 0 ? "justify-content-end align-items-center" : "justify-content-start align-items-center"
+                    className={`${styles.image_text_wrap} d-flex align-items-center  ${
+                      index % 2 === 0 ? `justify-content-end ${styles.image_color}` : "justify-content-start"
                     } ` }
-                    style={{height:"100%"}}
+                    
                   >
                   <div className={styles.image_text}>
                     <h4>{data.title}</h4>

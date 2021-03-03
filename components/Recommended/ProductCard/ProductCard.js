@@ -51,7 +51,7 @@ export default function ProductCard(props) {
                 <Typography variant="h5" color="textSecondary">
                   {props.title}
                 </Typography>
-                <Typography variant="p" color="textSecondary">
+                <Typography variant="body1" color="textSecondary">
                   {props.description}
                 </Typography>
                 <Typography variant="h5" color="secondary">

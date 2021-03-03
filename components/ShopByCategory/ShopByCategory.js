@@ -72,7 +72,7 @@ const ShopByCategory = () => {
                     }}
                   >
                     <div className={styles.caterory_text}>
-                      <hp>{item.description}</hp>
+                      <p>{item.description}</p>
                       <h6>{item.title}</h6>
                     </div>
                   </div>

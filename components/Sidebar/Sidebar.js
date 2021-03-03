@@ -25,7 +25,7 @@ const Sidebar = (props) => {
           className={styles.sidebar_list}
         >
           {SidebarData.map((x, index) => (
-            <>
+            <React.Fragment key={x.title}>
               <ListItem key={index} button onClick={() => handleClick(x.title)}>
                 <ListItemIcon>{x.icon}</ListItemIcon>
                 <ListItemText primary={x.title} />
@@ -45,7 +45,7 @@ const Sidebar = (props) => {
                 >
                   <List component="div" disablePadding>
                     {x.subNav?.map((sub) => (
-                      <ListItem key={sub} button>
+                      <ListItem key={sub.title} button>
                         <ListItemIcon>{sub.icon}</ListItemIcon>
                         <ListItemText primary={sub.title} />
                       </ListItem>
@@ -53,7 +53,7 @@ const Sidebar = (props) => {
                   </List>
                 </Collapse>
               )}
-            </>
+            </React.Fragment>
           ))}
         </List>
       </Drawer>
