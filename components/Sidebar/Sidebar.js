@@ -44,8 +44,8 @@ const Sidebar = (props) => {
                   unmountOnExit
                 >
                   <List component="div" disablePadding>
-                    {x.subNav?.map((sub, index) => (
-                      <ListItem button key={index}>
+                    {x.subNav?.map((sub) => (
+                      <ListItem key={sub} button>
                         <ListItemIcon>{sub.icon}</ListItemIcon>
                         <ListItemText primary={sub.title} />
                       </ListItem>

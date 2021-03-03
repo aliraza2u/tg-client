@@ -51,12 +51,12 @@ export const SidebarData = [
     iconOpen: <ArrowDropDownIcon />,
     subNav: [
       {
-        title: "About",
+        title: "Order Type",
         path: "/",
         icon: <CardTravel />,
       },
       {
-        title: "Contact",
+        title: "Order List",
         path: "/",
         icon: <Money />,
       },

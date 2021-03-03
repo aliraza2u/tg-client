@@ -18,7 +18,6 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import styles from "./productCard.module.scss";
 import { Button } from "@material-ui/core";
 import Rating from "@material-ui/lab/Rating";
-// import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {

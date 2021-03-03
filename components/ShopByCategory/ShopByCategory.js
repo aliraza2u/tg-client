@@ -1,4 +1,3 @@
-import { Typography } from "@material-ui/core";
 import React from "react";
 import styles from "./shopByCategory.module.scss";
 import Slider from "react-slick";
