@@ -2,9 +2,9 @@ import React from "react";
 import Titlebar from "../../components/Titlebar";
 import Navbar from "../../components/Navbar";
 import CarouselBar from "../../components/CarouselBar";
-import ProductCard from "../../components/Recommended/ProductCard";
 import ProductsCarousel from "../../components/Recommended/ProductsCarousel";
 import ShopByCategory from "../../components/ShopByCategory";
+import SalesProducts from "../../components/SalesProducts";
 
 const Home = () => {
   return (
@@ -14,6 +14,7 @@ const Home = () => {
       <CarouselBar />
       {/* <ProductsCarousel/> */}
       <ShopByCategory/>
+      <SalesProducts/>
     </div>
   );
 };

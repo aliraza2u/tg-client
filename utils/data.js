@@ -160,3 +160,34 @@ export const CategoryCardData = [
     description: "Save $100.00",
   },
 ];
+
+//Sales products for home page
+
+export const SaleProductsCard = [
+  {
+    image:"https://media.istockphoto.com/photos/laptop-computer-on-desk-and-landscape-view-background-picture-id482852196?k=6&m=482852196&s=170667a&w=0&h=VQb7fUiYAoMI31eCNClGO0kXUrrzT9dAaibtgk7xp7Y=",
+    title:"Everything Become Wow",
+    price:"640.00",
+    salePrice:"125"
+  },
+  
+  {
+    image:"https://lh3.googleusercontent.com/proxy/Gciv8TsXxF906DUZCA-imBK0UV-czdIRArPr1oM6RKe2lcvUwv6SnUoO-SPP0Duk1ibvSiI9DyWclCdJjHa0WdL3Aj1n3ZzBbksvFeOnPxE",
+    title:"Everything Become Wow",
+    price:"640.00",
+    salePrice:"125"
+  },
+  {
+    image:"https://lh3.googleusercontent.com/proxy/Gciv8TsXxF906DUZCA-imBK0UV-czdIRArPr1oM6RKe2lcvUwv6SnUoO-SPP0Duk1ibvSiI9DyWclCdJjHa0WdL3Aj1n3ZzBbksvFeOnPxE",
+    title:"Everything Become Wow",
+    price:"640.00",
+    salePrice:"125"
+  },
+  {
+    image:"https://media.istockphoto.com/photos/laptop-computer-on-desk-and-landscape-view-background-picture-id482852196?k=6&m=482852196&s=170667a&w=0&h=VQb7fUiYAoMI31eCNClGO0kXUrrzT9dAaibtgk7xp7Y=",
+    title:"Everything Become Wow",
+    price:"640.00",
+    salePrice:"125"
+  },
+
+]
