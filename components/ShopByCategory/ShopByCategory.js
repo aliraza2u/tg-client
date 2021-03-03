@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./shopByCategory.module.scss";
 import Slider from "react-slick";
 import { CategoryCardData } from "../../utils/data";
+import { IconButton } from "@material-ui/core";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 const ShopByCategory = () => {
   var settings = {
@@ -44,7 +47,17 @@ const ShopByCategory = () => {
 
   return (
     <div className={styles.shop_category_wrap}>
-      <h4 className={styles.shop_category_text}>Shop By Category</h4>
+      <div className={styles.category_text_icon}>
+        <h4>Shop By Category</h4>
+        <div>
+          <IconButton>
+            <ChevronLeftIcon />
+          </IconButton>
+          <IconButton>
+            <ChevronRightIcon />
+          </IconButton>
+        </div>
+      </div>
       <Slider {...settings}>
         {CategoryCardData?.map((item, index) => {
           return (

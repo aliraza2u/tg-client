@@ -16,8 +16,8 @@ const Brands = () => {
     initialSlide: 1,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
+    autoplaySpeed: 5000,
+    // cssEase: "linear",
     pauseOnHover: true,
     responsive: [
       {

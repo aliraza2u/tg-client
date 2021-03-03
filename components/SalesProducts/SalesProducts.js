@@ -5,7 +5,7 @@ import { SaleProductsCard } from "../../utils/data";
 const SalesProducts = () => {
   return (
     <div className={styles.sales_products_wrap}>
-      <h2 variant="h4">Sales</h2>
+      <h2 className={styles.sales_product_text}>Sales</h2>
       <div className="container-fluid">
         <div className="row">
           {SaleProductsCard?.map((data, index) => {
@@ -15,9 +15,16 @@ const SalesProducts = () => {
                   style={{ backgroundImage: `url(${data.image})` }}
                   className={styles.sale_image}
                 >
+                  <div
+                    className={`d-flex  ${
+                      index % 2 === 0 ? "justify-content-end align-items-center" : "justify-content-start align-items-center"
+                    } ` }
+                    style={{height:"100%"}}
+                  >
                   <div className={styles.image_text}>
-                    <h5>{data.title}</h5>
-                    Starting at <h5>${data.price}</h5>
+                    <h4>{data.title}</h4>
+                     <p> Starting at</p> <h5>${data.price}</h5>
+                  </div>
                   </div>
                 </div>
               </div>

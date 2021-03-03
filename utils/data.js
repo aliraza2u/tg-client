@@ -165,26 +165,26 @@ export const CategoryCardData = [
 
 export const SaleProductsCard = [
   {
-    image:"https://media.istockphoto.com/photos/laptop-computer-on-desk-and-landscape-view-background-picture-id482852196?k=6&m=482852196&s=170667a&w=0&h=VQb7fUiYAoMI31eCNClGO0kXUrrzT9dAaibtgk7xp7Y=",
+    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/orange-promo-1.jpg?v=1610304414",
     title:"Everything Become Wow",
     price:"640.00",
     salePrice:"125"
   },
   
   {
-    image:"https://lh3.googleusercontent.com/proxy/Gciv8TsXxF906DUZCA-imBK0UV-czdIRArPr1oM6RKe2lcvUwv6SnUoO-SPP0Duk1ibvSiI9DyWclCdJjHa0WdL3Aj1n3ZzBbksvFeOnPxE",
+    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/text-bg2.jpg?v=1577097373",
     title:"Everything Become Wow",
     price:"640.00",
     salePrice:"125"
   },
   {
-    image:"https://lh3.googleusercontent.com/proxy/Gciv8TsXxF906DUZCA-imBK0UV-czdIRArPr1oM6RKe2lcvUwv6SnUoO-SPP0Duk1ibvSiI9DyWclCdJjHa0WdL3Aj1n3ZzBbksvFeOnPxE",
+    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/text-bg3.jpg?v=1577097395",
     title:"Everything Become Wow",
     price:"640.00",
     salePrice:"125"
   },
   {
-    image:"https://media.istockphoto.com/photos/laptop-computer-on-desk-and-landscape-view-background-picture-id482852196?k=6&m=482852196&s=170667a&w=0&h=VQb7fUiYAoMI31eCNClGO0kXUrrzT9dAaibtgk7xp7Y=",
+    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/orange-promo-4.jpg?v=1610304934",
     title:"Everything Become Wow",
     price:"640.00",
     salePrice:"125"
