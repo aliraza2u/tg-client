@@ -34,7 +34,7 @@ export default function ProductCard(props) {
   const classes = useStyles();
 
   return (
-        <div className="col-md-6 col-lg-4">
+        <div className="w-100 px-4" key={props.key}>
           <div className={styles.product_card_wrap}>
             <Card className={styles.card_wrap}>
               <div className={styles.share_icon}>
@@ -45,14 +45,14 @@ export default function ProductCard(props) {
               <div className={styles.media_card_wrap}>
                 <CardMedia
                   image={props.productImage}
-                  style={{ width: "100%", backgroundSize: "contain" }}
+                  className={styles.media_card}
                 ></CardMedia>
               </div>
               <CardContent className={styles.card_content}>
                 <Typography variant="h5" color="textSecondary">
                   {props.title}
                 </Typography>
-                <Typography variant="h6" color="textSecondary">
+                <Typography variant="p" color="textSecondary">
                   {props.description}
                 </Typography>
                 <Typography variant="h5" color="secondary">

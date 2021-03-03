@@ -108,3 +108,55 @@ export const ProductCardData = [
     price: "1500",
   },
 ];
+
+//Sale by catergory data for home page
+export const CategoryCardData = [
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection6_450x.jpg?v=1586136780",
+    title: "Accessories",
+    description: "Save over $500.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection5_450x.jpg?v=1586137602",
+    title: "Sound Players",
+    description: "Save $100.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection2_450x.jpg?v=1586137620",
+    title: "WEARABLES",
+    description: "Save over $50.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection5_450x.jpg?v=1586137602",
+    title: "Sound Players",
+    description: "Save $100.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection6_450x.jpg?v=1586136780",
+    title: "Accessories",
+    description: "Save over $500.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection5_450x.jpg?v=1586137602",
+    title: "Sound Players",
+    description: "Save $100.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection2_450x.jpg?v=1586137620",
+    title: "WEARABLES",
+    description: "Save over $50.00",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/collections/collection5_450x.jpg?v=1586137602",
+    title: "Sound Players",
+    description: "Save $100.00",
+  },
+];

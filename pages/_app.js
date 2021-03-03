@@ -7,6 +7,8 @@ import theme from "./theme";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "./../styles/globals.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;

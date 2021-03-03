@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar";
 import CarouselBar from "../../components/CarouselBar";
 import ProductCard from "../../components/Recommended/ProductCard";
 import ProductsCarousel from "../../components/Recommended/ProductsCarousel";
+import ShopByCategory from "../../components/ShopByCategory";
 
 const Home = () => {
   return (
@@ -11,8 +12,8 @@ const Home = () => {
       <Titlebar />
       <Navbar />
       <CarouselBar />
-      {/* <ProductCard  /> */}
-      <ProductsCarousel/>
+      {/* <ProductsCarousel/> */}
+      <ShopByCategory/>
     </div>
   );
 };
