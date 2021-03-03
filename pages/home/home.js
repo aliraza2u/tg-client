@@ -5,6 +5,7 @@ import CarouselBar from "../../components/CarouselBar";
 import ProductsCarousel from "../../components/Recommended/ProductsCarousel";
 import ShopByCategory from "../../components/ShopByCategory";
 import SalesProducts from "../../components/SalesProducts";
+import Brands from "../../components/Brands";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <ProductsCarousel />
       <ShopByCategory />
       <SalesProducts />
+      <Brands/>
     </div>
   );
 };

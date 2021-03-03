@@ -191,3 +191,30 @@ export const SaleProductsCard = [
   },
 
 ]
+
+export const BrandsData = [
+  {
+    // loader: 'imgix',
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
+  },
+  
+  {
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand1_d84a21c6-5640-403e-bd42-f1d843c66212.jpg?v=1584093193"
+  },
+  {
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
+  },
+  {
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand1_d84a21c6-5640-403e-bd42-f1d843c66212.jpg?v=1584093193"
+  },
+  {
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
+  },
+  {
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
+  },
+  {
+    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand2_c72b775a-fe9d-4b88-abd0-a9dbe42308d3.jpg?v=1584093206"
+  },
+
+]

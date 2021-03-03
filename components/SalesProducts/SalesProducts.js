@@ -5,7 +5,7 @@ import { SaleProductsCard } from "../../utils/data";
 const SalesProducts = () => {
   return (
     <div className={styles.sales_products_wrap}>
-      <h4 variant="h4">Sales</h4>
+      <h2 variant="h4">Sales</h2>
       <div className="container-fluid">
         <div className="row">
           {SaleProductsCard?.map((data, index) => {
