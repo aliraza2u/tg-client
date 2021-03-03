@@ -15,8 +15,8 @@ const ProductsCarousel = () => {
     slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 6000,
     cssEase: "linear",
     pauseOnHover: true,
     responsive: [
@@ -48,9 +48,7 @@ const ProductsCarousel = () => {
   return (
     <div className={styles.product_carousel_wrap}>
       <div className={styles.text_icons}>
-        <h4>
-          Recommended Products
-        </h4>
+        <h4>Recommended Products</h4>
         <div>
           <IconButton>
             <ChevronLeftIcon />
