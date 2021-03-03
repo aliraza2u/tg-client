@@ -45,9 +45,7 @@ const ShopByCategory = () => {
 
   return (
     <div className={styles.shop_category_wrap}>
-      <Typography variant="h4" className={styles.shop_category_text}>
-        Shop By Category
-      </Typography>
+      <h4 className={styles.shop_category_text}>Shop By Category</h4>
       <Slider {...settings}>
         {CategoryCardData?.map((item, index) => {
           return (

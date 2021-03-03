@@ -34,7 +34,7 @@ export default function ProductCard(props) {
   const classes = useStyles();
 
   return (
-        <div className="w-100 px-4" key={props.key}>
+        <div className="px-2" key={props.key}>
           <div className={styles.product_card_wrap}>
             <Card className={styles.card_wrap}>
               <div className={styles.share_icon}>

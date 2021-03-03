@@ -12,9 +12,9 @@ const Home = () => {
       <Titlebar />
       <Navbar />
       <CarouselBar />
-      {/* <ProductsCarousel/> */}
-      <ShopByCategory/>
-      <SalesProducts/>
+      <ProductsCarousel />
+      <ShopByCategory />
+      <SalesProducts />
     </div>
   );
 };
