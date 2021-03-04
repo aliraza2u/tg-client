@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Carousel } from "antd";
 import styles from "./carousel.module.scss";
 // import { Fade, Bounce, Zoom } from "react-awesome-reveal";
 import { useSpring, animated } from "react-spring";
+import Slider from "react-slick";
 
 const CarouselBar = () => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } });
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
 
   const [sliderData, setSliderData] = useState([
     {
@@ -29,8 +38,8 @@ const CarouselBar = () => {
   ]);
 
   return (
-    <div>
-      <Carousel autoplay className={styles.carousel_wrapper}>
+    <div className={styles.carousel_wrapper}>
+      <Slider {...settings}>
         {sliderData.map((x, index) => (
           <div key={index}>
             <div
@@ -44,7 +53,7 @@ const CarouselBar = () => {
             </div>
           </div>
         ))}
-      </Carousel>
+      </Slider>
     </div>
   );
 };

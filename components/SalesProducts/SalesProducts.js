@@ -10,14 +10,14 @@ const SalesProducts = () => {
         <div className="row">
           {SaleProductsCard?.map((data, index) => {
             return (
-              <div className={`${styles.classname} col-lg-6`} style={{ padding: "1px" }} key={index}>
+              <div className={`${styles.product_warp} col-lg-6`} key={index}>
                 <div
                   style={{ backgroundImage: `url(${data.image})` }}
                   className={styles.sale_image}
                 >
                   <div
                     className={`${styles.image_text_wrap} d-flex align-items-center  ${
-                      index % 2 === 0 ? `justify-content-end ${styles.image_color}` : "justify-content-start"
+                      index % 2 === 0 ? `justify-content-end ${styles.primary_text}` : `justify-content-start`
                     } ` }
                     
                   >

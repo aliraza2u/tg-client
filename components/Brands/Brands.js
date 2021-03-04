@@ -16,7 +16,7 @@ const Brands = () => {
     initialSlide: 1,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     // cssEase: "linear",
     pauseOnHover: true,
     responsive: [
@@ -47,16 +47,8 @@ const Brands = () => {
   };
   return (
     <div className={styles.brands_wrap}>
-      <div className={styles.brands_text_icon}>
+      <div className={styles.brands_text}>
         <h3>Brands</h3>
-        <div>
-          <IconButton>
-            <ChevronLeftIcon />
-          </IconButton>
-          <IconButton>
-            <ChevronRightIcon />
-          </IconButton>
-        </div>
       </div>
       <div className={styles.brand_slider_wrap}>
         <Slider {...settings}>

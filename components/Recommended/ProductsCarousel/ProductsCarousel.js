@@ -9,16 +9,14 @@ import styles from "./productsCarousel.module.scss";
 
 const ProductsCarousel = () => {
   var settings = {
-    dot: false,
+    dots: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
+    slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 6000,
-    cssEase: "linear",
+    autoplaySpeed: 2000,
     pauseOnHover: true,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1025,

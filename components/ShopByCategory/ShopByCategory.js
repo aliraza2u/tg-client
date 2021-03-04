@@ -8,16 +8,14 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 const ShopByCategory = () => {
   var settings = {
-    dot: false,
+    dots: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
+    slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
     pauseOnHover: true,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1025,
