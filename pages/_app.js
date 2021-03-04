@@ -5,7 +5,6 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "antd/dist/antd.css";
 import "./../styles/globals.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

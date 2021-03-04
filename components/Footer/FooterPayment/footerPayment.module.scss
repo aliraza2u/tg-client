@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+.footer_payment_wrap {
+    background-color: $main-bg;
+    color: $primary-color;
+    text-align: center;
+    padding: 20px;
+    .jazzcash_icon {
+        cursor: pointer;
+        width: 50px;
+        padding: 2px;
+        margin-right: 1%;
+    }
+    .self_icon {
+        cursor: pointer;
+        width: 32px;
+        padding: 2px;
+        margin-left: 1%;
+    }
+}
+
+.copyrights {
+    background-color: $main-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

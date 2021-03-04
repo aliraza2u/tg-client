@@ -1,0 +1,32 @@
+@import '../../../styles//variables';
+.footer_body_wrap {
+    background-color: $main-bg;
+    padding: 20px;
+    .footer_col {
+        padding: 0px;
+        color: $primary-color;
+        .tg_logo {
+            border-radius: 100%;
+        }
+        .footer_icon_ul {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            span {
+                margin-right: 3%;
+            }
+            .footer_contact_ul {
+                padding: 0px;
+                list-style: none;
+                margin-bottom: 0px;
+                li {
+                    word-break: break-all;
+                }
+            }
+        }
+        .footer_ul {
+            padding: 0px;
+            list-style: none;
+        }
+    }
+}

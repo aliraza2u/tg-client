@@ -1,11 +1,14 @@
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import {
   HomeOutlined,
   NavigateBeforeOutlined,
   Message,
   CardTravel,
   Money,
+  Email,
+  Facebook,
 } from "@material-ui/icons";
 
 export const NavbarData = [
@@ -165,56 +168,144 @@ export const CategoryCardData = [
 
 export const SaleProductsCard = [
   {
-    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/orange-promo-1.jpg?v=1610304414",
-    title:"Everything Become Wow",
-    price:"640.00",
-    salePrice:"125"
-  },
-  
-  {
-    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/text-bg2.jpg?v=1577097373",
-    title:"Everything Become Wow",
-    price:"640.00",
-    salePrice:"125"
-  },
-  {
-    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/text-bg3.jpg?v=1577097395",
-    title:"Everything Become Wow",
-    price:"640.00",
-    salePrice:"125"
-  },
-  {
-    image:"https://cdn.shopify.com/s/files/1/0287/6594/5940/files/orange-promo-4.jpg?v=1610304934",
-    title:"Everything Become Wow",
-    price:"640.00",
-    salePrice:"125"
+    image:
+      "https://cdn.shopify.com/s/files/1/0287/6594/5940/files/orange-promo-1.jpg?v=1610304414",
+    title: "Everything Become Wow",
+    price: "640.00",
+    salePrice: "125",
   },
 
-]
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0287/6594/5940/files/text-bg2.jpg?v=1577097373",
+    title: "Everything Become Wow",
+    price: "640.00",
+    salePrice: "125",
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0287/6594/5940/files/text-bg3.jpg?v=1577097395",
+    title: "Everything Become Wow",
+    price: "640.00",
+    salePrice: "125",
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0287/6594/5940/files/orange-promo-4.jpg?v=1610304934",
+    title: "Everything Become Wow",
+    price: "640.00",
+    salePrice: "125",
+  },
+];
 
 export const BrandsData = [
   {
     // loader: 'imgix',
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
-  },
-  
-  {
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand1_d84a21c6-5640-403e-bd42-f1d843c66212.jpg?v=1584093193"
-  },
-  {
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
-  },
-  {
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand1_d84a21c6-5640-403e-bd42-f1d843c66212.jpg?v=1584093193"
-  },
-  {
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
-  },
-  {
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265"
-  },
-  {
-    image:"//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand2_c72b775a-fe9d-4b88-abd0-a9dbe42308d3.jpg?v=1584093206"
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265",
   },
 
-]
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand1_d84a21c6-5640-403e-bd42-f1d843c66212.jpg?v=1584093193",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand1_d84a21c6-5640-403e-bd42-f1d843c66212.jpg?v=1584093193",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand7_b1410a07-8283-4c86-8714-f4da8bf2f2f8.jpg?v=1584093265",
+  },
+  {
+    image:
+      "//cdn.shopify.com/s/files/1/0287/6594/5940/files/brand2_c72b775a-fe9d-4b88-abd0-a9dbe42308d3.jpg?v=1584093206",
+  },
+];
+
+export const FooterAccount = [
+  {
+    title: "My Account",
+  },
+  {
+    title: "Register",
+  },
+  {
+    title: "Search",
+  },
+  {
+    title: "Wishlist",
+  },
+  {
+    title: "Recommended",
+  },
+  {
+    title: "Orders",
+  },
+];
+export const FooterServices = [
+  {
+    title: "Help & Contact",
+  },
+
+  {
+    title: "Buy Venedor",
+  },
+  {
+    title: "About Us",
+  },
+  {
+    title: "Contact Us",
+  },
+  {
+    title: `What's new`,
+  },
+  {
+    title: "Affiliates",
+  },
+];
+export const FooterContacts = [
+  {
+    icon: <PermContactCalendarIcon />,
+    contactOne: "0320-6625492",
+    contactTwo: "000-1111-22222",
+  },
+
+  {
+    icon: <Email />,
+    contactOne: "arslanshahab@gmail.com",
+    contactTwo: "test@gmail.com",
+  },
+  {
+    icon: <Facebook />,
+    contactOne: "arslanshahab",
+  },
+];
+
+export const FooterInformation = [
+  {
+    title: "New Products",
+  },
+
+  {
+    title: "Top Sellers",
+  },
+  {
+    title: "Special products",
+  },
+  {
+    title: "Terms and conditons",
+  },
+
+  {
+    title: " Delivery",
+  },
+];

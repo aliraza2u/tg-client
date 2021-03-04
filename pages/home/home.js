@@ -6,6 +6,9 @@ import ProductsCarousel from "../../components/Recommended/ProductsCarousel";
 import ShopByCategory from "../../components/ShopByCategory";
 import SalesProducts from "../../components/SalesProducts";
 import Brands from "../../components/Brands";
+import FooterHead from "../../components/Footer/FooterHead";
+import FooterBody from "../../components/Footer/FooterBody";
+import FooterPayment from "../../components/Footer/FooterPayment";
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       <ShopByCategory />
       <SalesProducts />
       <Brands/>
+      <FooterHead/>
+      <FooterBody/>
+      <FooterPayment/>
     </div>
   );
 };
