@@ -1,13 +1,28 @@
-import React from "react";
-import { ProductCardData } from "../../../utils/data";
+import React, { useEffect, useState } from "react";
 import ProductCard from "../ProductCard";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { IconButton } from "@material-ui/core";
 import Slider from "react-slick";
 import styles from "./productsCarousel.module.scss";
+import axios from "axios";
 
 const ProductsCarousel = () => {
+  const [products, setProducts] = useState([]);
+  console.log("Products data from api", products);
+  useEffect(() => {
+    axios
+      .get(" https://tahaifghar-api.herokuapp.com/api/v1/product")
+      .then((response) => {
+        if (response.status === 200 || response.status === 201) {
+          setProducts(response.data.message);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   var settings = {
     dots: true,
     infinite: true,
@@ -59,14 +74,14 @@ const ProductsCarousel = () => {
 
       <div style={{ padding: "25px" }}>
         <Slider {...settings}>
-          {ProductCardData?.map((data, index) => {
+          {products?.map((data, index) => {
             return (
               <ProductCard
                 key={index}
-                productImage={data.image}
-                title={data.title}
+                productImage={data.image_url}
+                title={data.name}
                 description={data.description}
-                price={data.price}
+                price={data.unit_price}
               />
             );
           })}
@@ -75,5 +90,4 @@ const ProductsCarousel = () => {
     </div>
   );
 };
-
 export default ProductsCarousel;

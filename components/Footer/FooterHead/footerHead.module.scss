@@ -12,9 +12,11 @@
         width: 40%;
         margin-top: 20px;
         @media #{$md} {
+            display: flex;
+            justify-content: center;
             width: 100%;
-            padding-left: 20%px;
-            padding-right: 20%px;
+            // padding-left: 20%px;
+            // padding-right: 20%px;
         }
         @media #{$sm} {
             width: 100%;
@@ -23,8 +25,8 @@
         }
         @media #{$tiny} {
             width: 100%;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 2%;
+            padding-right: 2%;
         }
         .footer_head_form {
             background-color: $white;
