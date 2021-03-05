@@ -12,7 +12,7 @@ const ProductsCarousel = () => {
   console.log("Products data from api", products);
   useEffect(() => {
     axios
-      .get(" https://tahaifghar-api.herokuapp.com/api/v1/product")
+      .get("https://tahaifghar-api.herokuapp.com/api/v1/product")
       .then((response) => {
         if (response.status === 200 || response.status === 201) {
           setProducts(response.data.message);

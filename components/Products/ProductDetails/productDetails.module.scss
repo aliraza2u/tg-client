@@ -1,0 +1,78 @@
+@import '../../../styles/variables';
+.product_details_wrap {
+    background-color: $main-bg;
+    //col 1
+    .product_image_wrap {
+        display: flex;
+        justify-content: flex-end;
+        padding: 5%;
+        @media #{$sm} {
+            display: flex;
+            justify-content: center;
+        }
+        @media #{$tiny} {
+            padding: 2%;
+        }
+        .product_image {
+            border-radius: 10px;
+        }
+    }
+    //col 2
+    .product_text_details {
+        padding: 5% 10% 5% 5%;
+        @media #{$md} {
+            padding: 4%;
+        }
+        @media #{$sm} {
+            padding: 5%;
+        }
+        @media #{$tiny} {
+            padding: 2%;
+        }
+        .price_fav {
+            width: 100%;
+        }
+        .button_icon_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .count_button {
+                width: 120px;
+                height: 35px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid $primary-color;
+                padding: 3px;
+                @media #{$tiny} {
+                    width: 100px;
+                    padding: 1px;
+                }
+                .count_num {
+                    padding: 5px;
+                }
+            }
+            .add_cart_btn {
+                background-color: $secondary-color;
+                color: $white;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .purchase_btn {
+                background-color: $secondary-color;
+                color: $white;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .chat_wrap {
+            color: #ff0000;
+            margin-top: 15px;
+        }
+        .share_icons_wrap {
+            margin-left: 5px;
+        }
+    }
+}
