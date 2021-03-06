@@ -1,16 +1,17 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 .footer_head_wrap {
     background-color: $primary-color;
     color: $white;
     // padding: 10px;
     .col_one {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
     }
     .col_two {
-        width: 40%;
-        margin-top: 20px;
+        // width: 40%;
+        // margin-top: 20px;
+        align-self: center;
         @media #{$md} {
             display: flex;
             justify-content: center;
@@ -29,12 +30,26 @@
             padding-right: 2%;
         }
         .footer_head_form {
-            background-color: $white;
-            border: 1px solid $secondary-color;
-            padding-left: 20px;
-            border-radius: 25px;
+            // background-color: $white;
+            // border: 1px solid $secondary-color;
+            // padding-left: 20px;
+            // border-radius: 25px;
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
+            // align-items: stretch;
+            .text_field {
+                background-color: $white;
+                border-radius: 25px 0 0 25px;
+                padding: 0.35rem 0;
+                padding-left: 1rem;
+                width: 75%;
+            }
+            button {
+                background-color: $secondary-color;
+                border-radius: 0 25px 25px 0;
+                width: 25%;
+                color: $white;
+            }
         }
     }
 }

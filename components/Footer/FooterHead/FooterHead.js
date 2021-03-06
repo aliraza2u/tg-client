@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationIcon from "@material-ui/icons/Navigation";
+import TelegramIcon from "@material-ui/icons/Telegram";
 import styles from "./footerHead.module.scss";
 import {
   TextField,
@@ -12,24 +12,22 @@ import {
 const FooterHead = () => {
   return (
     <div className={styles.footer_head_wrap}>
-      <div className="container-fluid">
-        <div className="row p-1">
-          <div className={`${styles.col_one} col-md-12 col-lg-6`}>
-            <div>
-              <h3>
-                <span>
-                  <i>
-                    <NavigationIcon />
-                  </i>
-                </span>
-                Sign up for our newsletter
-              </h3>
-              <p>
-                and enjoy <b>-15% off</b> your first purchase!
-              </p>
+      <div className="container">
+        <div className="row py-4">
+          <div className={`${styles.col_one} col-md-12 col-lg-7`}>
+            <div className="d-flex align-items-center">
+              <span className="pr-2">
+                <i>
+                  <TelegramIcon fontSize="large" />
+                </i>
+              </span>
+              <h5 className="m-0">
+                Sign up for our newsletter <br />
+                <small>and enjoy <b>-15% off</b> your first purchase!</small>
+              </h5>
             </div>
           </div>
-          <div className={`${styles.col_two} col-md-12-col-lg-6`}>
+          <div className={`${styles.col_two} col-md-12 col-lg-5`}>
             <form
               noValidate
               autoComplete="off"

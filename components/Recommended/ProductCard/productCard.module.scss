@@ -1,3 +1,5 @@
+@import './../../../styles/variables';
+
 .product_card_wrap {
     display: flex;
     justify-content: center;
@@ -7,8 +9,11 @@
     .card_wrap {
         width: 100%;
         position: relative;
+        cursor: pointer;
+        box-shadow: 0px 0px 1px rgba($color: $black, $alpha: 0.3) !important;
+        border-radius: 0;
         &:hover {
-            box-shadow: 0px 0px 10px rgb(253, 120, 142);
+            box-shadow: 0px 0px 15px rgba($color: $black, $alpha: 0.1) !important;
         }
         .share_icon {
             position: absolute;
@@ -32,14 +37,19 @@
         }
         .cart_details {
             justify-content: space-between;
-            button {
+            .cart_btn {
                 color: #363636;
                 width: 110px;
-                background-color: rgb(248, 172, 185);
-                &:hover {
-                    color: #ffffff;
-                    background-color: rgb(253, 120, 142);
-                }
+                background-color: $primary-color;
+                color: $white;
+                border-radius: 0;
+            }
+            .view_btn {
+                color: #363636;
+                width: 110px;
+                background-color: transparent;
+                color: $primary-color;
+                border-radius: 0;
             }
         }
         .card_content {

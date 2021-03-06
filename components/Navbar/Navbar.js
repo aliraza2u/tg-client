@@ -37,7 +37,7 @@ const Navbar = () => {
 
           {/* Navbar Branding */}
           <div className={styles.typography}>
-            <Typography variant="h6" className="typography">
+            <Typography variant="h5" className={styles.typography}>
               Tahaif Ghar
             </Typography>
           </div>

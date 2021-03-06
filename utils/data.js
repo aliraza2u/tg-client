@@ -281,12 +281,12 @@ export const FooterContacts = [
 
   {
     icon: <Email />,
-    contactOne: "arslanshahab@gmail.com",
+    contactOne: "sales@tahaifghar.com",
     contactTwo: "test@gmail.com",
   },
   {
     icon: <Facebook />,
-    contactOne: "arslanshahab",
+    contactOne: "tahaifghar",
   },
 ];
 

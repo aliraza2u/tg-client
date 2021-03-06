@@ -61,8 +61,8 @@ export default function ProductCard(props) {
                 </IconButton>
               </CardActions>
               <CardActions className={styles.cart_details}>
-                <Button>Details</Button>
-                <Button>Add to cart</Button>
+                <Button className={styles.view_btn} variant="outlined">Details</Button>
+                <Button className={styles.cart_btn}>Add to cart</Button>
               </CardActions>
             </Card>
           </div>

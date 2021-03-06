@@ -9,7 +9,6 @@ import axios from "axios";
 
 const ProductsCarousel = () => {
   const [products, setProducts] = useState([]);
-  console.log("Products data from api", products);
   useEffect(() => {
     axios
       .get("https://tahaifghar-api.herokuapp.com/api/v1/product")
@@ -29,7 +28,7 @@ const ProductsCarousel = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     pauseOnHover: true,
     cssEase: "linear",
     responsive: [

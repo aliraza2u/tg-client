@@ -14,28 +14,28 @@ const Cartbar = () => {
       <div className={styles.login}>
         {/* Login Icon */}
         <span>
-          <i>Login</i>
-          <i>
+          <span className="pr-2">Login</span>
+          <span>
             <LockOpen />{" "}
-          </i>
+          </span>
         </span>
       </div>
       {/* Wishlist and  AddCart */}
       <div className={styles.carts_wrap}>
         <div className={styles.wishlist}>
           <span>
-            <i>
+            <span>
               <FavoriteBorder />{" "}
-            </i>
-            <i>Wishlist(0)</i>
+            </span>
+            <span>Wishlist(0)</span>
           </span>
         </div>
         <div className={styles.cartlist}>
           <span>
-            <i>
+            <span>
               <ShoppingCart />{" "}
-            </i>
-            <i>0 item - $0.00</i>
+            </span>
+            <span>0 item - $0.00</span>
           </span>
         </div>
       </div>
