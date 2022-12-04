@@ -1,7 +1,7 @@
 function Blog({ posts }) {
     return (
       <ul>
-        {posts.map((post) => (
+        {posts?.map((post) => (
           <li key={post.name}>{post.name}</li>
         ))}
       </ul>
@@ -21,7 +21,7 @@ function Blog({ posts }) {
     // will receive `posts` as a prop at build time
     return {
       props: {
-        posts,
+        posts: posts.message,
       },
     };
   }
